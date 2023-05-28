@@ -1,0 +1,24 @@
+.images {
+    @include coverImage();
+}
+
+.list-products{
+    .item{
+        width: 25%;
+        float: left;
+        @include mobile(){
+            width: 100%;
+        }
+        .box-img{
+            img{
+                width: 100%;
+            }
+        }
+        .name{
+            @include textWithEllipsis(11, 1.2, 3);
+            a{
+                color: $text-color;
+            }
+        }
+    }
+}

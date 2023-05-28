@@ -1,0 +1,15 @@
+.btn{
+    @include button(#fff, #333, 8px);
+}
+
+.btn-primary{
+    @extend .btn;
+}
+
+.button{
+    @include button(#f40000, #ffffff, 10px);
+}
+
+.link-button{
+    @include button(#00ff00, #ffffff, 4px);
+}
